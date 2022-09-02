@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
     <h1>Todos</h1>
+=======
+    <!-- <h1>Todos</h1>
+>>>>>>> 6e95850 (added ejs)
     <ul>
     <% todos.forEach( el => { %>
             <li class='todoItem' data-id='<%=el._id%>'>
@@ -25,8 +29,113 @@
         <input type="submit">
     </form>
 
+<<<<<<< HEAD
     <a href="/logout">Logout</a>
 
+=======
+    <a href="/logout">Logout</a> -->
+    <h1 class="title">Press Start</h1>
+    <section>
+        <form action="/todos/createTodo" class="newGame" method="POST">
+            <div class="addGameTitle">
+                <img class="logo" src="/images/console.png">
+                <h2 class="addGame">Add a game</h2>
+                <img class="logo" src="/images/game-controller.png">
+            </div>
+            
+            <div class="inputsContainer">
+                <div class="inputs">
+                    <label class="inputTitles" for="gameTitle">Game Title</label>
+                    <input type="text" class="inputWidth" id="gameTitle" name="gameTitle" placeholder="Enter game title here..." required>
+                </div>
+                <div class="inputs">
+                    <label class="inputTitles" for="chooseGenre">Genre</label>
+                    <select class="inputWidth" id="chooseGenre" name="chooseGenre" required>
+                        <option value="rpg">RPG</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="action">Action</option>
+                        <option value="fighting">Fighting</option>
+                        <option value="sports">Sports</option>
+                        <option value="racing">Racing</option>
+                        <option value="strategy">Strategy</option>
+                        <option value="puzzle">Puzzle</option>
+                        <option value="shooter">Shooter</option>
+                        <option value="simulation">Simulation</option>
+                        <option value="survival">Survival</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label class="inputTitles" for="chooseConsole">Console</label>
+                    <select class="inputWidth" id="choose-console" name="chooseConsole" required>
+                        <option value="pc">PC</option>
+                        <option value="playstation">Playstation</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="nintendo">Nintendo</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <label class="inputTitles" for="rating">Rating</label>
+                    <select class="inputWidth" id="rating" name="rating" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">5</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="submitBtn">Add Game</button>
+        </form>
+        <h2><%= user.userName %> has <%= left %> games in their library.</h2>
+        <<div class="consoles">
+            <span class="console pcGames">PC</span>
+                <ul>
+                <% pcGames.forEach( el => { %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                         <span><%= el.gameTitle %></span>
+                         <span class='del'> Delete </span>
+                    </li>
+                <% }) %>    
+                </ul>
+            <span class="console">Playstation</span>
+                <ul>
+                <% playstationGames.forEach( el => { %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                         <span><%= el.gameTitle %></span>
+                         <span class='del'> Delete </span>
+                    </li>
+                <% }) %>    
+                </ul>
+            <span class="console">Xbox</span>
+                <ul>
+                <% xboxGames.forEach( el => { %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                         <span><%= el.gameTitle %></span>
+                         <span class='del'> Delete </span>
+                    </li>
+                <% }) %>    
+                </ul>
+            <span class="console">Nintendo</span>
+                <ul>
+                <% nintendoGames.forEach( el => { %>
+                    <li class='todoItem' data-id='<%=el._id%>'>
+                         <span><%= el.gameTitle %></span>
+                         <span class='del'> Delete </span>
+                    </li>
+                <% }) %>    
+                </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="/logout">Logout</a>
+        <i>(Icons made by
+            <a href="https://www.flaticon.com/free-icons/game-controller" title="game controller icons">Freepik</a> & <a href="https://www.flaticon.com/free-icons/joystick" title="joystick icons">Good Ware</a>)</i>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>
