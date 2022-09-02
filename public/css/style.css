@@ -7,4 +7,77 @@ h1{
 }
 .not{
     text-decoration: underline;
+<<<<<<< HEAD
+=======
+}
+
+/* Styling for Press Start */
+
+body {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 15px;
+}
+
+.title {
+    font-size: 5em;
+    margin-bottom: 15vh;
+}
+
+.addGameTitle {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 5vh;
+}
+
+.addGame {
+    font-size: 3em;
+}
+
+.inputsContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+    gap: 5vw;
+}
+
+.inputTitles {
+    font-size: 2em;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputWidth {
+    width: 15vw;
+    height: auto;
+}
+
+.submitBtn {
+    margin-bottom: 15vh;
+    font-size: 2em;
+    font-family: 'VT323', monospace;
+}
+
+.logo {
+    height: 20vh;
+    width: auto;
+}
+
+.consoles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.console {
+    list-style: none;
+    font-size: 2em;
+}
+
+.footer {
+    margin-top: 15vh;
+>>>>>>> 6e95850 (added ejs)
 }
