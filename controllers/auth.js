@@ -58,11 +58,13 @@ const User = require('../models/User')
   
   exports.postSignup = (req, res, next) => {
     const validationErrors = []
+                                                  // check for a valid email address
     if (!validator.isEmail(req.body.email)) validationErrors.push({ msg: 'Please enter a valid email address.' })
+                                                  // check that password is at least 8 chars long
     if (!validator.isLength(req.body.password, { min: 8 })) validationErrors.push({ msg: 'Password must be at least 8 characters long' })
+                                                  // check to see if passwords match
     if (req.body.password !== req.body.confirmPassword) validationErrors.push({ msg: 'Passwords do not match' })
-  
-    if (validationErrors.length) {
+    if (validationErrors.length) {                // if anything above is incorrect, then run these validation errors:
       req.flash('errors', validationErrors)
       return res.redirect('../signup')
     }

@@ -8,11 +8,19 @@ const UserSchema = new mongoose.Schema({
 })
 
 
-// Password hash middleware.
+//  Password hash middleware.
  
  UserSchema.pre('save', function save(next) {
   const user = this
   if (!user.isModified('password')) { return next() }
+
+  /**
+    Instead of putting our plain text passwords right into our database, 
+    this bit of code makes sure we don't have to store plain text passwords.
+
+    so we hash the password using bcrypt:
+   */
+
   bcrypt.genSalt(10, (err, salt) => {
     if (err) { return next(err) }
     bcrypt.hash(user.password, salt, (err, hash) => {
@@ -24,7 +32,7 @@ const UserSchema = new mongoose.Schema({
 })
 
 
-// Helper method for validating user's password.
+//  Helper method for validating user's password.
 
 UserSchema.methods.comparePassword = function comparePassword(candidatePassword, cb) {
   bcrypt.compare(candidatePassword, this.password, (err, isMatch) => {
