@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 
 const GameSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+
   genre: {
     type: String,
     required: true,
@@ -22,7 +27,7 @@ const GameSchema = new mongoose.Schema({
   console: {
     type: String,
     required: true,
-    enum: ['pc', 'playstation', 'xbox', 'nintendo'] 
+    enum: ['pcGame', 'playstationGame', 'xboxGame', 'nintendoGame'] 
   },
 
   rating: {                          
@@ -32,9 +37,14 @@ const GameSchema = new mongoose.Schema({
     max: 10,
   },
 
-  userId: {                            
+  user: {                            
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',                        // ref is how we connect it to the user model
+  },
+
+  completed: {
+    type: Boolean,
+    default: false,
   },
 
 })
