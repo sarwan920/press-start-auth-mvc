@@ -1,12 +1,12 @@
 # Game Tracker
 
 ---
+![preview](https://user-images.githubusercontent.com/111554660/188451216-36ab6d75-d682-43dd-b764-6da2ed278720.png)
+
 ** Full Website: #### **
 
-<img source='#'>
-
+---
 ## Introduction
-
 - Game tracker is a web-based application created as a group project by students of 100devs.
 - This is designed using the MVC architecture with the 'authorization' so users can sign up and create a personal database to keep track of their backlogged and upcoming games. 
 
