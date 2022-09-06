@@ -32,6 +32,13 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 
 ---
 
+# Improvements on the Application
+
+In future, we are considering having a provision where users can add notes describing the games that they have 
+already played. Further, we can implement a dashboard where users are able to see the games they have already completed.
+
+In addition, we wish to implement a dark mode feature because what is an app without dark mode? And finally, we can implement an API that houses game data that users can readily call upon instead of hard coding the games they have played themselves.
+
 # Things to add
 
 - Create a `.env` file and add the following as `key: value` 
