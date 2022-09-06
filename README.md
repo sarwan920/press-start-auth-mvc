@@ -1,19 +1,22 @@
-# Introduction
-
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+# Game Tracker
 
 ---
+![preview](https://user-images.githubusercontent.com/111554660/188451216-36ab6d75-d682-43dd-b764-6da2ed278720.png)
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
-
----
-
-# Objectives
-
-- It's a beginner level app created to understand how MVC concept and logins are added
+** Full Website: #### **
 
 ---
+## Introduction
+- Game tracker is a web-based application created as a group project by students of 100devs.
+- This is designed using the MVC architecture with the 'authorization' so users can sign up and create a personal database to keep track of their backlogged and upcoming games. 
 
+---
+## How to use the application? 
+- After logging in using the username and passwords, users can add the game with 5 different properties including title, console, genre, rating and the default user ID.
+
+- Once entered, users can have their own game library with a random generator suggesting the next game to play based on the genre and the assigned score.
+
+---
 # Who is this for? 
 
 - It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
@@ -31,6 +34,13 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
 `npm install` 
 
 ---
+
+# Improvements on the Application
+
+In future, we are considering having a provision where users can add notes describing the games that they have 
+already played. Further, we can implement a dashboard where users are able to see the games they have already completed.
+
+In addition, we wish to implement a dark mode feature because what is an app without dark mode? And finally, we can implement an API that houses game data that users can readily call upon instead of hard coding the games they have played themselves.
 
 # Things to add
 
