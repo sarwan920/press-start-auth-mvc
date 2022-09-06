@@ -11,4 +11,16 @@ router.get('/logout', authController.logout)
 router.get('/signup', authController.getSignup)
 router.post('/signup', authController.postSignup)
 
+
+///////////////////////////////////////////////////////////////////////
+// Materialize Testing Routes:
+router.get('/testIndex', homeController.getTestIndex)
+router.get('/testLogin', authController.getTestLogin)
+router.post('/testLogin', authController.postTestLogin)
+router.get('/testLogout', authController.testLogout)
+
+router.get('/testSignup', authController.getTestSignup)
+router.post('/testSignup', authController.postTestSignup)
+//
+///////////////////////////////////////////////////////////////////////
 module.exports = router

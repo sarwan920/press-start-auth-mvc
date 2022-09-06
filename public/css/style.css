@@ -7,8 +7,6 @@ h1{
 }
 .not{
     text-decoration: underline;
-<<<<<<< HEAD
-=======
 }
 
 /* Styling for Press Start */
@@ -79,5 +77,26 @@ body {
 
 .footer {
     margin-top: 15vh;
->>>>>>> 6e95850 (added ejs)
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-logout {
+    margin-top: 45px;
+}
+
+.modal {
+
+    text-align: center !important;
+}
+
+.img-main-page {
+    max-width: 50%;
+}
+.btn-games-random {
+    color: black;
 }
