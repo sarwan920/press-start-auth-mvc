@@ -185,7 +185,7 @@ module.exports = {
             console.log('get rando')
             
             const numOfGames = await Game.countDocuments({user:req.user.id, completed: false});
-            const gameItems = await Game.find({user:req.user.id});
+            const gameItems = await Game.find({user:req.user.id}).sort( {rating: -1} )
 
             const randomIndex = Math.floor(Math.random() * gameItems.length)
             const randomGame = gameItems[randomIndex]
