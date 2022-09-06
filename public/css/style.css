@@ -7,11 +7,20 @@ h1{
 }
 .not{
     text-decoration: underline;
-<<<<<<< HEAD
-=======
 }
 
-/* Styling for Press Start */
+/* Styling for Press Start todos.ejs */
+
+.indexTitle {
+    font-size: 5rem;
+}
+
+.indexBtns {
+    margin: 10px;
+    font-size: 3rem;
+}
+
+/* Styling for Press Start todos.ejs */
 
 body {
     font-family: 'VT323', monospace;
@@ -79,5 +88,4 @@ body {
 
 .footer {
     margin-top: 15vh;
->>>>>>> 6e95850 (added ejs)
 }
