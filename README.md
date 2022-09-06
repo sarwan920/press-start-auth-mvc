@@ -1,19 +1,22 @@
-# Introduction
-
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so folx can sign up, customize & personalize the app 
+# Game Tracker
 
 ---
+![preview](https://user-images.githubusercontent.com/111554660/188451216-36ab6d75-d682-43dd-b764-6da2ed278720.png)
 
-> Be sure to add that lovely star 😀 and fork it for your own copy
-
----
-
-# Objectives
-
-- It's a beginner level app created to understand how MVC concept and logins are added
+** Full Website: #### **
 
 ---
+## Introduction
+- Game tracker is a web-based application created as a group project by students of 100devs.
+- This is designed using the MVC architecture with the 'authorization' so users can sign up and create a personal database to keep track of their backlogged and upcoming games. 
 
+---
+## How to use the application? 
+- After logging in using the username and passwords, users can add the game with 5 different properties including title, console, genre, rating and the default user ID.
+
+- Once entered, users can have their own game library with a random generator suggesting the next game to play based on the genre and the assigned score.
+
+---
 # Who is this for? 
 
 - It's for beginners & intermediates with little more experience, to help understand the various aspects of building a node app with some complex features
