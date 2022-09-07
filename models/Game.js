@@ -40,6 +40,7 @@ const GameSchema = new mongoose.Schema({
   user: {                            
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',                        // ref is how we connect it to the user model
+    required: true,
   },
 
   completed: {

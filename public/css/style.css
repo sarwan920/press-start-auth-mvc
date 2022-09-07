@@ -88,4 +88,30 @@ body {
 
 .footer {
     margin-top: 15vh;
+<<<<<<< HEAD
 }
+
+.login-container {
+    width: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-logout {
+    margin-top: 45px;
+}
+
+.modal {
+
+    text-align: center !important;
+}
+
+.img-main-page {
+    max-width: 50%;
+}
+.btn-games-random {
+    color: black;
+}
+=======
+}
+>>>>>>> upstream/main

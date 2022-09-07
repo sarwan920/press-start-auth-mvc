@@ -1,0 +1,91 @@
+<!-- Modal Trigger -->
+
+<div 
+    class="fixed-action-btn tooltipped"
+    id="add-game"
+    data-position="left"
+    data-tooltip="Add Game Here">
+    <a 
+        href="#modal-add-game" 
+        class="btn-floating btn-large waves-effect waves-light modal-trigger red"
+        >
+        <i class="fas fa-plus"></i>
+    </a>
+</div>
+
+
+<!-- Modal Structure -->
+
+    
+    <div id="modal-add-game" class="modal">
+
+        <form action="/games/testGames" method="POST">
+        <div class="modal-content col s8">
+
+            <div class="row"></div>    
+            <h2>Add Your Game Here:</h2>
+
+                <div class="row">
+                    <div class="col s2"></div>
+                    <div class="input-field col s8">
+                        <input name="name" placeholder="<game name here>" required>
+                    </div>
+                    <div class="col s2"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col s2"></div>
+                    
+                    <div class="input-field col s4">
+                        <select name="genre" id="select-genre" required>
+                          <option value="" disabled selected></option>
+                          <option value="survival">survival</option>
+                          <option value="simulation">simulation</option>
+                          <option value="shooter">shooter</option>
+                          <option value="puzzle">puzzle</option>
+                          <option value="strategy">strategy</option>
+                          <option value="racing">racing</option>
+                          <option value="sports">sports</option>
+                          <option value="fighting">fighting</option>
+                          <option value="action">action</option>
+                          <option value="adventure">adventure</option>
+                          <option value="rpg">rpg</option>
+                        </select>
+                        <label>Genre</label>
+                    </div>
+
+                    <div class="input-field col s4">
+                        <select name="console" id="select-console" required>
+                          <option value="" disabled selected></option>
+                          <option value="pcGame">pc</option>
+                          <option value="playstationGame">play station</option>
+                          <option value="xboxGame">xbox</option>
+                          <option value="nintendoGame">nintendo</option>
+   
+                        </select>
+                        <label>Console</label>
+                    </div>
+                    <div class="col s2"></div>
+                </div>
+
+                <div class="row">
+                        <div class="col s3"></div>
+                        <div class="col s6">Ratings Slidey Bar:
+                            <p class="range-field">
+                                <input type="range" name="rating" id="slidey-bar" min="0" max="10"/>
+                            </p>
+                        </div>
+                        <div class="col s3"></div>
+                </div>
+
+        </div>
+
+        <div class="modal-footer" id="">
+
+            <input type="submit" value="Add Game" id="btn-add-course" class="btn green lighten-2">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+
+        </div>
+    </form>
+    </div>
+
